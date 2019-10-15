@@ -3,8 +3,11 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
-
+let apples= 2;
+function applesMultiplied(){
+  apples*2 ;
+  return apples
+}
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 

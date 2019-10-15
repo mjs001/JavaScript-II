@@ -96,6 +96,29 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
+//They need the size medium shirt info
+let runnersMSizeShirt = [];
+let results = runners.filter(function(item){
+if (item.shirt_size === "M"){
+  runnersMSizeShirt.push(item);
+}
+});
+console.log(runnersMSizeShirt);
 // Problem 2
 
+//the director wants all of the runners to give a short intro
+let intro = [];
+runners.forEach(function(currentValue){
+intro.push(`Hello, my name is ${currentValue.first_name} ${currentValue.last_name} and I am a rep for ${currentValue.company_name}.`);
+});
+console.log(intro);
+
 // Problem 3
+//each runners company wants to add 500 dollars to their donation
+
+let totalDonation = [];
+runners.map(function(item){
+let donationTotal =(`${item.company_name}'s total donation is ${item.donation+500}`) ;
+totalDonation.push(donationTotal);
+});
+console.log(totalDonation);
